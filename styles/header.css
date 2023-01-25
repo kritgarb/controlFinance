@@ -1,0 +1,26 @@
+header { 
+    width: 100%;
+    height: 109px;
+    max-width: 100%;
+}
+
+.div_header {
+    width: 50%;
+}
+
+h1 {
+    Width: 153px;
+    Height: 24px;
+
+    font-family: var(--font-family-1);
+    font-style: normal;
+    font-weight: var(--font-weight-1);
+    font-size: 20px;
+    line-height: 24px;
+}
+
+.two-colors {
+    background: linear-gradient(to right, var(--color-brand-1) 50%, var(--color-grey-1) 0);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}

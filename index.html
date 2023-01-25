@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Control Finance</title>
+    <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon">
+    <meta name="description" content="Control Finance - Seu controle financeiro">
+    <link rel="stylesheet" href="./styles/display.css">
+    <link rel="stylesheet" href="./styles/align-items.css">
+    <link rel="stylesheet" href="./styles/justify.css">
+    <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/globalStyles.css">
+    <link rel="stylesheet" href="./styles/header.css">
+    <link rel="stylesheet" href="./styles/main.css">
+    <link rel="stylesheet" href="./styles/button.css">
+    <link rel="stylesheet" href="./styles/modal.css">
+</head>
+
+<body>
+    <header class="display-row justify-center align-items-center">
+        <div class="div_header display-row justify-space-between align-items-center">
+            <h1 class="two-colors">Control Finance</h1>
+            <button class="button-register" id="button-register">Registrar novo valor</button>
+        </div>
+    </header>
+    <main id="app" class="container">
+        <div class="display-row justify-center align-items-center">
+            <div id="finance-summary-wrapper" class="display-row justify-space-between align-items-center">
+                <h2>Resumo financeiro</h2>
+                <div class="li-button-summary">
+                    <button class="button-filter" id="button-summary">Todos</button>
+                    <button class="button-filter" id="button-summary">Entradas</button>
+                    <button class="button-filter" id="button-summary">Saídas</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="display-row justify-center align-items-center">
+            <div id="soma-de-valores-wrapper">
+                <div class="display-row justify-space-between align-items-center">
+                    <h2>Soma dos valores</h2>
+                    <p class="totalCards"></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="display-row justify-center align-items-center">
+            <div id="card-de-valores-wrapper">
+                <ul class="cards-all">
+                    <!-- <li class="values-card">
+                        <div class="card display-flex justify-space-between align-items-center">
+                            <p>R$ 40,00</p>
+                            <span id="button-category" class="margin-left-60">Entrada</span>
+                            <button id="button-trash"></button>
+                        </div>
+                    </li> -->
+                </ul>
+            </div>
+    
+        </div>
+        
+        <div class="modal-wrapper">
+            <div id="modal" class="modal display-column justify-center align-items-center">
+
+                <form id="form-modal">
+
+                    <div class="modal-header display-row justify-space-between align-items-center">
+                        <h2>Registro de valor</h2>
+                        <button id="close-modal" class="close__modal align-items-center">X</button>
+                    </div>
+
+                    <p class="modal-p">Digite o valor e em seguida aperte no botão referente ao tipo do valor </p>
+
+                    <div id="input-modal">
+                        <label>Valor <input id="input-value" type="number" placeholder="R$ 00,00"></label>
+                    </div>
+
+                    <div class="types-modal">
+                        <div class="types display-row align-items-center">
+                            <h3>Tipo de valor</h3>
+                            <label>Entrada</label>
+                            <input class="button-primary buttonDados" type="radio" name="tipo" value="entrada"></input>
+                            <label>Saida</label>
+                            <input class="button-primary buttonDados" type="radio" name="tipo" value="saida"></input>
+                        </div>
+                        <button id="button-cancel" class="cancel-value">Cancelar</button>
+                        <button id="button-value-start" type="submit" class="button-value">Inserir Valor</button>
+                    </div>
+
+                </form>
+
+            </div>
+        </div>
+        </div>
+    </main>
+    <script src="./scripts/valuesData.js"></script>
+    <script src="./scripts/modal.js"></script>
+    <script src="./scripts/index.js"></script>
+</body>
+
+</html>
